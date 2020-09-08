@@ -1,0 +1,154 @@
+.container
+{
+	position:relative;
+	color:white;
+	font-size: 20px;
+	line-height: 40px;
+	font-family: Mont;
+	text-align: left;
+}
+.bottom-left
+{
+	position:absolute;
+	bottom:30px;
+	left:100px;
+}
+
+.text1{
+	    	 height: 104px;
+  	   	 width: 332px;
+ 		 color: #000000;
+ 		 font-family: Mont;
+ 		 font-size: 15px;
+ 		 letter-spacing: 0;
+ 		 line-height: 26px;
+ 		 text-align: left;
+ 		 margin-left:70px;
+ 		 margin-top:10px;
+ 		  
+}
+
+.text2
+{
+		 height: 104px;
+ 		 width: 332px;
+ 		 color: #000000;
+ 		 font-family: Mont;
+ 		 font-size: 15px;
+ 		 letter-spacing: 0;
+  		 line-height: 26px;
+  		 text-align: left;
+  		 margin-left:740px;
+		 margin-top:10px;
+		 transform: translate(0%,-115%);
+
+}
+.text3{
+		 height: 104px;
+  		 width: 332px;
+	     	 color: #000000;
+        	 font-family: Mont;
+         	 font-size: 15px;
+         	 letter-spacing: 0;
+        	 line-height: 26px;
+       	         text-align: left;
+                 margin-left:70px;
+ 	         margin-top:10px;
+ 	        transform: translate(0%,-95%);
+ }
+  
+.text4{
+	 	height: 104px;
+   		width: 332px;
+  		color: #000000;
+  		font-family: Mont;
+  		font-size: 15px;
+  		letter-spacing: 0;
+ 	        line-height: 26px;
+       	 	text-align: left;
+        	margin-left:680px;
+        	margin-top:10px;
+        	transform: translate(0%,-230%);
+}
+
+
+#mapid1 {
+
+		 height:240px; 
+		 width: 570px;
+		 position: absolute;
+         	 display: block;
+         	 margin-left:200px;
+ 		 margin-top:55px	
+		 
+		}
+
+#mapid2 {
+
+		 height:240px; 
+		 width: 570px;
+		 position:relative;
+         	 display: block;
+		 margin-left:800px;
+		 margin-top:67px;
+		 transform: translate(0%,-55%);
+		 
+		}
+
+#mapid3 {
+		 
+ 		 height:240px; 
+		 width: 570px;
+ 		 position: absolute;
+                 display: block;
+ 		 margin-left:200px;
+ 		 margin-top:65px;
+ 		 transform: translate(0%,-45%);
+
+		}
+
+#mapid4 {
+
+		 height:240px; 
+		 width: 570px;
+		 position:relative;
+                 display: block;
+		 margin-left:800px;
+		 margin-top:65px;
+		 transform: translate(0%,-95%);
+
+		}
+
+.footer-distributed .footer-left,
+{
+	display: inline-block;
+	vertical-align: top;		
+	
+}
+
+
+.footer-distributed .footer-links
+{
+
+	color:  #ffffff;
+	height:85px;
+	width:1171px;
+	margin-top: 100px;
+    	margin-bottom: 100px;
+    	margin-right: 150px;
+    	margin-left: 80px;
+    	transform: translate(10%,-330%);
+
+}
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height:1.8;
+	text-decoration: none;
+	color:  black;
+	position:relative;
+        margin-right:10px;  
+        padding: 20px;
+        text-align:center;
+        background-color: white;
+   
+}

@@ -1,0 +1,380 @@
+//banner 
+
+.banner
+{
+ height:auto;
+  width:100%;
+}
+
+//leaflets
+
+.map-mixins
+{
+  object-fit: cover;
+  width: 100%;
+  height: 240px;
+ 
+}
+
+#mymap1 {
+  .map-mixins;
+}
+#mymap2 {
+	 .map-mixins;
+  
+}
+#mymap3 {
+	 .map-mixins;
+  
+}
+#mymap4 {
+	 .map-mixins;
+  
+}
+
+@font-face {
+  src: url(Montserrat-Medium.ttf);
+  font-family: Mont;
+}
+
+.frame {
+  background-color: #F8F8F8;
+  padding-bottom: 45px;
+  margin-bottom: 55px;
+  @media screen  and (max-width: 479px) {
+    margin-bottom: 1px;
+    padding-bottom: 25px;
+  }
+}
+
+
+//store content
+
+.mixin-text
+{
+   color: #D9A91A;
+  font-family: Mont;
+  font-weight: 600;
+  letter-spacing: 0.69px;
+  line-height: 22px;
+   font-size: 18px;
+
+}
+.jubilee {
+  height: 22px;
+  width: 152px;
+  .mixin-text;
+}
+
+.abids {
+  height: 22px;
+  width: 58px;
+  .mixin-text;
+  
+}
+
+.secunderabad {
+  height: 22px;
+  width: 155px;
+  .mixin-text;
+ 
+}
+
+.ks-beauty {
+  height: 22px;
+  width: 200px;
+  .mixin-text;
+}
+
+
+.mixin-road{
+   height: 104px;
+  width: 332px;
+  color: #000000;
+  font-family: Mont;
+  letter-spacing: 0;
+  font-size: 15px;
+  line-height: 26px;
+}
+
+//address
+
+.road-1 {
+  .mixin-road;
+  
+}
+
+.road-2 {
+  .mixin-road;
+}
+
+.road-3 {
+ .mixin-road;
+}
+
+.road-4 {
+  .mixin-road;
+}
+
+
+//footer
+.myframe {
+  margin-left: 6px;
+  margin-bottom: 52px;
+
+  @media screen  and (max-width: 479px) {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen  and (max-width: 479px) {
+  div.f1 {
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+    
+  }
+}
+
+.credit {
+
+  height: 55px;
+  width: 63px;
+  float: left;
+
+  @media screen  and (max-width: 479px) {
+    height: 20px;
+    width: 22px;
+    margin-left:34%;
+  }
+}
+
+.pay {
+  float: left;
+  height: 32px;
+  width: 148px;
+  color: #000000;
+  font-family: Mont;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  line-height: 16px;
+  margin-top: 19px;
+  margin-left: 14px;
+
+    @media screen  and (max-width: 479px) {
+      height: 32px;
+      width: 100px;
+      color: #000000;
+      font-family: Mont;
+      font-size: 10px;
+      letter-spacing: 0.36px;
+      line-height: 16px;
+      text-align: center;
+      margin-top: 10px;
+     
+     
+    }
+}
+
+@media screen  and (min-width: 1200px) {
+  .bar1 
+   {
+    height: 85px;
+    width: 1px;
+    background-color: #EEEEEE;
+    margin-left: 10px;
+    float: left;
+  }
+}
+
+
+@media screen  and (max-width: 479px) {
+  div.f2 {
+    display: flex;
+    flex-direction: column;
+    width: 33.33%;
+  }
+}
+
+.ribbon {
+  height: 67px;
+  width: 63px;
+  margin-left: 14px;
+  float: left;
+  @media screen  and (max-width: 479px) {
+    height: 20px;
+    width: 22px;
+    margin-left: 34%;
+  }
+}
+
+.products {
+  float: left;
+  height: 32px;
+  width: 148px;
+  color: #000000;
+  font-family: Mont;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  line-height: 16px;
+  margin-top: 19px;
+  margin-left: 14px;
+    @media screen  and (max-width: 479px) {
+      height: 32px;
+      width: 100px;
+      color: #000000;
+      font-family: Mont;
+      font-size: 10px;
+      letter-spacing: 0.36px;
+      line-height: 16px;
+      text-align: center;
+      margin-top: 10px;
+      
+    }
+}
+
+@media screen  and (min-width: 1200px) {
+  .bar2 {
+  
+    height: 85px;
+    width: 1px;
+    background-color: #EEEEEE;
+    margin-left: 10px;
+    float: left;
+  }
+}
+
+@media screen  and (max-width: 479px) {
+  div.f3 {
+     width: 33.33%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.box {
+  float: left;
+  height: 63px;
+  width: 63px;
+  margin-left: 14px;
+  @media screen  and (max-width: 479px) {
+    height: 20px;
+    width: 22px;
+    margin-left: 34%;
+  }
+}
+
+.ship {
+  float: left;
+  height: 32px;
+  width: 148px;
+  color: #000000;
+  font-family: Mont;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  line-height: 16px;
+  margin-top: 19px;
+  margin-left: 14px;
+    @media screen  and (max-width: 479px) {
+      height: 32px;
+      width: 105px;
+      color: #000000;
+      font-family: Mont;
+      font-size: 10px;
+      letter-spacing: 0.36px;
+      line-height: 16px;
+      text-align: center;
+      margin-top: 10px;
+      
+    }
+}
+@media screen  and (min-width: 1200px) {
+  .bar3 {
+    height: 83px;
+    width: 1px;
+    background-color: #EEEEEE;
+    margin-left: 10px;
+    float: left;
+  }
+}
+
+@media screen  and (max-width: 479px) {
+  .bar4 {
+    height: 1px;
+    width: 304px;
+    background-color: #EEEEEE;
+    margin-bottom: 32px;
+  }
+}
+
+.text {
+  float:left;
+  height: 16px;
+  width: 340px;
+  color: #000000;
+  font-family: Mont;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.88px;
+  line-height: 16px;
+  margin-left: 23px;
+
+    @media screen  and (max-width: 479px) {
+      height: 16px;
+      width: 308px;
+      color: #000000;
+      font-family: Mont;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.88px;
+      line-height: 16px;
+    }
+
+    @media only screen and (max-width: 1040px) and (min-width: 767px) {
+      margin-top: 28px;
+      margin-left: 130px;
+    }
+}
+
+.text-box {
+  box-sizing: border-box;
+  height: 45px;
+  width: 270px;
+  border: 1px solid #EEEEEE;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  margin-left: 21px;
+  
+    @media screen  and (max-width: 479px) {
+      box-sizing: border-box;
+      height: 45px;
+      width: 302.68px;
+      border: 1px solid #EEEEEE;
+      border-radius: 5px;
+      background-color: #FFFFFF;
+     
+    }
+    @media only screen and (max-width: 1040px) and (min-width: 767px) {
+      margin-left: 130px;
+      margin-top: 10px;
+    }
+}
+
+.rect-box {
+  height: 45px;
+  width: 130px;
+  border-radius: 5px;
+  background-color: #000000;
+  color: #FFFFFF;
+  margin-left: 62px;
+    @media screen  and (max-width: 479px) {
+      height: 45px;
+      width: 115.92px;
+      border-radius: 5px;
+      background-color: #D9A91A;
+      margin-left: 115px;
+    }
+}

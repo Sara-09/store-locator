@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	  <title>Store</title>
+  	  <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <link rel="stylesheet" href="styl.css" type="text/css">
+    
+  <!--  bootstrap css  -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet/less" type="text/css" href="styl.less" >
+
+  <!-- bootstrap js -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!--leaflets-->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css">
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+
+</head>
+
+<body>
+
+	<!--header image -->
+    <header>
+        <img class="banner" src="banner.jpeg" alt="store"> 
+    </header>
+
+<!--store content-->
+   <div class="container-fluid frame">
+        <div class="container">
+          <div class="row">
+
+            <!--jubilee hills -->
+            <div class="col-sm-6" >
+              <h1 class="jubilee">JUBILEE HILLS</h1>
+              <p class="road-1">Road No.36, Jubilee Hills,<br>
+                                Hyderabad, Telangana-500033.<br>
+                                Phone: +91 040 6704 3636 <br>
+                                11:00 am - 9:00 pm (Monday to Sunday)
+                              </p>
+
+            <div id="mymap1"></div>
+              <script>
+              var mymap1 = L.map('mymap1').setView([17.438976, 78.488942],17);
+              L.tileLayer('https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=Bmeigy3LL2S3wxmjyGQm', {
+              attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>',
+              }).addTo(mymap1);
+              var marker = L.marker([17.438976, 78.488942]).addTo(mymap1);
+              </script>
+            </div>
+
+            <!--abids-->
+            <div class="col-sm-6">
+              <h1 class="abids">ABIDS</h1>
+              <p class="road-2">Main Road, Abids,<br>
+                                Hyderabad, Telangana-500001.<br>
+                                Phone: +91 040 6656 6234 <br>
+                                11:00 am - 9:00 pm (Monday to Sunday)
+                              </p>
+
+              <div id="mymap2"></div>
+              <script>
+                var mymap2 = L.map('mymap2').setView([17.438976, 78.488942],17);
+                L.tileLayer('https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=Bmeigy3LL2S3wxmjyGQm', {
+                attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>',
+                }).addTo(mymap2);
+                var marker = L.marker([17.438976, 78.488942]).addTo(mymap2);
+              </script>
+            </div>
+          </div>
+
+          <div class="row">
+
+            <!--secunderabad-->
+            <div class="col-sm-6" >
+              <h1 class="secunderabad">SECUNDERABAD</h1>
+              <p class="road-3">Gandhi Statue Square.<br>
+                                Secunderabad, Telangana-500003.<br>
+                                Phone: +91 040 2784 6188<br>
+                                11:00 am - 9:00 pm (Monday to Sunday)
+                              </p>
+
+              <div id="mymap3"></div>
+              <script>
+                 var mymap3 = L.map('mymap3').setView([17.438976, 78.488942],17);
+                L.tileLayer('https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=Bmeigy3LL2S3wxmjyGQm', {
+                attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>',
+                }).addTo(mymap3);
+                var marker = L.marker([17.438976, 78.488942]).addTo(mymap3);
+              </script>
+            </div>
+
+            <!--ks-beauty-->
+            <div class="col-sm-6" >
+              <h1 class="ks-beauty">KS BEAUTY CENTRE</h1>
+              <p class="road-4">Kathiawar Plaza, P.G. Road,<br>
+                                Secunderabad, Telangana – 500003.<br>
+                                Phone: +91 040 66381555<br>
+                                11:00 am - 8:30 pm (Monday to Sunday)
+                              </p>
+
+              <div id="mymap4"></div>
+              <script>
+                var mymap4 = L.map('mymap4').setView([17.438976, 78.488942],17);
+                L.tileLayer('https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=Bmeigy3LL2S3wxmjyGQm', {
+                attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>',
+                }).addTo(mymap4);
+                var marker = L.marker([17.438976, 78.488942]).addTo(mymap4);
+              </script>
+            </div>
+          </div>
+        </div>
+      </div>
+
+   <!--footer content -->  
+   <footer>
+
+      <div class="container-fluid">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+               <div class="myframe">
+
+                  <!-- credit icon1-->
+                 <div class="f1">
+                    <img class="credit" src="credit-card.png" alt="credit card">
+                    <p class="pay">Safe & Secured Payment Gateway</p>
+                    <div class="bar1"></div>
+                 </div>
+
+                  <!-- ribbon icon2-->
+                 <div class="f2">
+                    <img class="ribbon" src="ribbon.png" alt="ribbon">
+                    <p class="products">Genuine Products Guranteed</p>
+                    <div class="bar2"></div>
+                </div>
+
+                  <!--box icon2-->
+                <div class="f3">
+                    <img class="box" src="box.png" alt="box">
+                    <p class="ship">Free Shipping for orders over Rs.749</p>
+                    <div class="bar3"></div>
+                </div>
+
+                <div class="bar4"></div>
+                  <!--text bar-->
+                <div class="f4">
+                    <p class="text">KEEP UPDATED & GET UNLIMITED OFFERS</p>
+                    <input type="text" placeholder="Your email address" class="text-box">
+                    <!--text-box-->
+                    <button class="rect-box" type="button" name="button">Subscribe</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  </footer>		
+
+</body>
+</html>

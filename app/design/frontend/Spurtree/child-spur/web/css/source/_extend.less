@@ -1,0 +1,48 @@
+@custom_bg_color: #8f35a5;
+@custom_bg_hover_color: #8f35a5;
+@color: #8f35a5;
+
+
+//buttons
+.action.primary,.action.primary:hover{
+	background: @custom_bg_color;
+	border: 1px solid @custom_bg_color;
+}
+
+
+//logo
+.logo {
+    margin: -8px auto 25px 0;
+    margin-left: 450px;
+}
+
+
+//link
+.action.add {
+    white-space: nowrap;
+    color: @color;
+}
+a:visited, .alink:visited {
+    color: @color;
+    text-decoration: none;
+}
+a, .alink {
+    color: @color;
+    text-decoration: none;
+}
+
+
+//cart icons
+.minicart-wrapper .showcart::before{
+	content:"" !important;
+	background: url(https://www.svgrepo.com/show/291770/handbag-bag.svg) no-repeat;
+	width: 27px;
+	height: 25px;
+	padding-left: 37px !important;
+}
+
+
+//display 
+.product-info-main {
+    float: left;
+}

@@ -8,16 +8,38 @@
 	background: @custom_bg_color;
 	border: 1px solid @custom_bg_color;
 }
-
-
+//add to bag button 
+@media(min-width:768px)
+{
+.action.primary {
+    background: @color;
+    border: 1px solid @color;
+}
+.action.primary:hover {
+    background: @color;
+    border: 1px solid @color;
+}
+}
+.action.primary {
+    background-image: none;
+    background:  @color;
+    border: 1px solid  @color;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    padding: 7px 15px;
+    font-size: 1.4rem;
+    box-sizing: border-box;
+    vertical-align: middle;
+}
 //logo
 .logo {
     margin: -8px auto 25px 0;
     margin-left: 450px;
 }
-
-
-//link
+//links
 .action.add {
     white-space: nowrap;
     color: @color;
@@ -30,8 +52,25 @@ a, .alink {
     color: @color;
     text-decoration: none;
 }
-
-
+//home,decor..
+.breadcrumbs a, .breadcrumbs a:active, .breadcrumbs a:hover, .breadcrumbs a:visited{
+  color: @color;
+  text-decoration: none;
+}
+//message 
+.message.success a, .message.success a:hover, .message.success a:active  {
+    color:  @color;
+}
+//focus
+.action-primary:hover, .action-primary:focus, .action-primary:active {
+    background: @color;
+    border: 1px solid @color;
+    color: #ffffff;
+}
+//mini cart link
+.minicart-items .product-item-name a {
+    color:  @color ;
+}
 //cart icons
 .minicart-wrapper .showcart::before{
 	content:"" !important;
@@ -40,8 +79,6 @@ a, .alink {
 	height: 25px;
 	padding-left: 37px !important;
 }
-
-
 //display 
 .product-info-main {
     float: left;

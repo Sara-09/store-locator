@@ -1,6 +1,8 @@
+
 @custom_bg_color: #8f35a5;
 @custom_bg_hover_color: #8f35a5;
 @color: #8f35a5;
+@color-white:#ffffff;
 
 
 //buttons
@@ -8,18 +10,16 @@
 	background: @custom_bg_color;
 	border: 1px solid @custom_bg_color;
 }
-//add to bag button 
-@media(min-width:768px)
-{
-.action.primary {
-    background: @color;
-    border: 1px solid @color;
-}
-.action.primary:hover {
-    background: @color;
-    border: 1px solid @color;
-}
-}
+
+//primary button
+
+@button-primary__color: @color-white;
+@button-primary__hover__color: @color-white;
+@button-primary__background: #8f35a5 ;
+@button-primary__hover__background: #8f35a5;
+@button-primary__border: 1px solid #8f35a5;
+@button-primary__hover__border: 1px solid #8f35a5;
+
 .action.primary {
     background-image: none;
     background:  @color;
@@ -35,10 +35,7 @@
     vertical-align: middle;
 }
 //logo
-.logo {
-    margin: -8px auto 25px 0;
-    margin-left: 450px;
-}
+
 //links
 .action.add {
     white-space: nowrap;
@@ -72,14 +69,428 @@ a, .alink {
     color:  @color ;
 }
 //cart icons
-.minicart-wrapper .showcart::before{
-	content:"" !important;
-	background: url(https://www.svgrepo.com/show/291770/handbag-bag.svg) no-repeat;
-	width: 27px;
-	height: 25px;
-	padding-left: 37px !important;
-}
+
 //display 
 .product-info-main {
     float: left;
+}
+
+
+ 
+
+
+
+//header
+
+//links
+
+@media (min-width:200px){
+.navbar{
+    position: relative;
+    left: 750px;
+    top:-70px;
+  }
+.row{
+  font-size:11px;
+  font-weight: 600;
+
+   }
+}
+
+@media (min-width:200px)
+{
+a:visited, .alink:visited {
+    color: #f8f9fa;
+}
+a:hover {
+    color: #f8f9fa;
+    }
+  }
+
+
+
+
+.page-header .widget.block{
+  margin:1px;
+}
+
+
+ .block-search {
+    float: left;
+    margin-left: 60px;
+    margin-top: 15px;
+    width: 320px;
+    padding-left: 5px;
+}
+
+//top menu
+
+.navigation {
+        font-weight: 600;
+        font-size: 15px;
+    }
+
+.page-header {
+    
+    background: black;
+    color: white;
+}
+
+.logo img {
+    display: block;
+    width: 326px;
+    height: 68px;
+}
+
+//footer
+.page-footer {
+    background: #252525;
+    margin-top: auto;
+    padding-bottom: 25px;
+}
+
+.bugs strong {
+    color: #252525;
+  }
+
+
+.font-weight-bold {
+    font-weight: 700!important;
+    color: #fff;
+}
+.footer.content .links a:active {
+    color: #fff;
+    text-decoration: underline;
+}
+.footer.content .links a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+.footer.content .links a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+.footer.content ul {
+    padding-right: 30px;
+    color: #fff;
+}
+
+
+//credit footer
+.block p:last-child {
+    margin: auto;
+    padding-top: 25px;
+     background:#fff;
+    color:black;
+}
+
+
+    
+//footer icon
+
+
+
+@media (min-width:200px){
+.col-sm-12{
+
+    
+    bottom: -180px;
+    left: 0px;
+  }
+}
+
+
+
+//footer
+.myframe {
+  margin-bottom: 50px;
+  margin-left: 5px;
+
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+    display:flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+
+}
+  @media screen  and (max-width: 540px) {
+    margin-top: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  @media screen  and (max-width: 450px) {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-bottom: 0px;
+  }
+}
+
+@media screen  and (max-width: 479px) {
+  div.f1 {
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+    
+  }
+}
+
+.credit {
+
+  height: 55px;
+  width: 63px;
+  float: left;
+
+  @media screen  and (max-width: 479px) {
+    height: 20px;
+    width: 22px;
+    margin-left:34%;
+  }
+}
+
+.pay {
+  float: left;
+  height: 32px;
+  width: 270px;
+  color: #000;
+  font-family: Mont;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  line-height: 16px;
+  margin-top: 20px;
+  margin-left: 25px;
+  font-weight: normal;
+    @media only screen
+    and (min-device-width: 768px)
+    and (max-device-width: 1024px)
+    and (-webkit-min-device-pixel-ratio: 1) {
+      margin-left:0;
+
+  }
+    @media screen  and (max-width: 450px) {
+      height: 32px;
+      width: 100px;
+      color: #000;
+      font-family: Mont;
+      font-size: 10px;
+      letter-spacing: 0.38px;
+      line-height: 16px;
+      text-align: center;
+      margin-top: 10px;
+      margin-left: 0px;
+    }
+    @media only screen
+    and (max-device-width: 320px)
+    and (-webkit-min-device-pixel-ratio: 2) {
+      font-size:8px;
+    }
+    @media only screen and (max-device-width: 280px) {
+      margin-top: 0;
+      margin-left: 5%;
+      text-align: inherit;
+      width: max-content;
+      font-size:10px;
+    }
+}
+
+@media screen  and (min-width: 1200px) {
+  .bar1 
+   {
+    height: 85px;
+    width: 1px;
+    background-color: #EEEEEE;
+    margin-left: 0px;
+    float: left;
+  }
+}
+
+
+@media screen  and (max-width: 479px) {
+  div.f2 {
+    display: flex;
+    flex-direction: column;
+    width: 33.33%;
+  }
+}
+
+.ribbon {
+  height: 67px;
+  width: 63px;
+  margin-left: 14px;
+  float: left;
+  @media screen  and (max-width: 479px) {
+    height: 20px;
+    width: 22px;
+    margin-left: 34%;
+  }
+}
+
+.products {
+  .pay;
+  width:240px;
+  @media only screen and (max-device-width: 280px) {
+        margin-top: 5px;
+  }
+}
+
+@media screen  and (min-width: 1200px) {
+  .bar2 {
+  
+    height: 85px;
+    width: 1px;
+    background-color: #EEEEEE;
+    margin-left: 0px;
+    float: left;
+  }
+}
+
+@media screen  and (max-width: 479px) {
+  div.f3 {
+     width: 33.33%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.box {
+  float: left;
+  height: 63px;
+  width: 63px;
+  margin-left: 14px;
+  @media screen  and (max-width: 479px) {
+    height: 20px;
+    width: 22px;
+    margin-left: 34%;
+  }
+}
+
+.ship {
+  .pay;
+  width:280px;
+  @media screen  and (max-width: 450px) {
+    width: 105px;
+  }
+  @media only screen and (max-device-width: 280px) {
+    margin-left: 5%;
+    width: auto;
+  }
+}
+@media screen  and (min-width: 1200px) {
+  .bar3 {
+    height: 83px;
+    width: 1px;
+    background-color: #EEEEEE;
+    margin-left: 0px;
+    float: left;
+  }
+}
+
+@media screen  and (max-width: 479px) {
+  .bar4 {
+    height: 1px;
+    width: 304px;
+    background-color: #EEEEEE;
+    margin-bottom: 32px;
+  }
+}
+
+.text {
+  float:left;
+  height: fit-content;
+  width: auto;
+  color: #000;
+  font-family: Mont;
+  font-size: 12px;
+  letter-spacing: 0.88px;
+  line-height: 16px;
+  text-transform: uppercase;
+  margin-left: 30px;
+  font-weight: bold;
+  @media screen  and (max-width: 540px) {
+    margin-top: 20px;
+    margin-left: 0px;
+
+  }
+    @media screen  and (max-width: 450px) {
+      height: fit-content;
+      width: max-content;
+      color: #000;
+      font-family: Mont;
+      font-size: 12px;
+      letter-spacing: 0.88px;
+      line-height: 16px;
+      margin-left: 0px;
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+
+    @media only screen and (max-width: 1030px) and (min-width: 760px) {
+      margin-top: 30px;
+      margin-left: 0px;
+    }
+    @media only screen
+    and (max-device-width: 320px)
+    and (-webkit-min-device-pixel-ratio: 2) {
+      height: fit-content;
+      width: auto;
+      font-size:10px;
+
+    }
+    @media only screen and (max-device-width: 280px) {
+      font-size:8px;
+    }
+}
+
+.text-box {
+  box-sizing: border-box;
+  height: 35px;
+  width: 180px;
+  border: 1px solid #EEEEEE;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  margin-left: 21px;
+  
+    @media screen  and (max-width: 479px) {
+      box-sizing: border-box;
+      height: 45px;
+      width: 302.68px;
+      border: 1px solid #EEEEEE;
+      border-radius: 5px;
+      background-color: #FFFFFF;
+     
+    }
+    @media only screen and (max-width: 1040px) and (min-width: 767px) {
+      margin-left: 130px;
+      margin-top: 10px;
+    }
+}
+
+.rect-box {
+  height: 35px;
+  width: 80px;
+  border-radius: 5px;
+  background-color: #000000;
+  color: #FFFFFF;
+  margin-left: -80px;
+    @media screen  and (max-width: 479px) {
+      height: 45px;
+      width: 110px;
+      border-radius: 5px;
+      background-color: #D9A91A;
+      margin-left: -110px;
+    }
+}
+@media (min-width:200px){
+.copyright
+{
+      background-color: #282a2a;
+      padding: 10px;
+      font-size: 12px;
+      color: #D9A91A;
+}
 }
